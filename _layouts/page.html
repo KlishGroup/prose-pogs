@@ -25,7 +25,7 @@
  		<div class="container" >
  			<div class="container">
  				{% if page and page.banner %}
-	 				<img class="center-block" src="{{ page.url | prepend: site.github.url }}/{{page.banner}}" alt="{% if (page.title) %}{{page.title | xml_escape }}{% else %}Hilton POGs{% endif %}" />
+	 				<img class="center-block" src="{{ site.github.url }}/{{page.banner}}" alt="{% if (page.title) %}{{page.title | xml_escape }}{% else %}Hilton POGs{% endif %}" />
 	 				<br /><hr />
 	 			{% endif %}
  			</div>
