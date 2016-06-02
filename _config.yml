@@ -7,6 +7,9 @@
 
 # Site settings
 incremental: false
+
+url: http://klishgroup.github.io/prose-pogs
+
 title: Prose.io Hilton Pogs
 email: info@klishgroup.com
 description: > # this means to ignore newlines until "baseurl:"
