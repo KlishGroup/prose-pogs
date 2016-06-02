@@ -1,13 +1,18 @@
 ---
 layout: page
 title: Brady-Swoboda Wedding
-date: 2016-05-24
+date: {}
 author: Nick DiPasquale
-tags: weekly links, java
+tags: 'weekly links, java'
 status: published
 summary: Sample Markdown Content
 banner: images/wedding_20_large.jpg
-booking: {"startDate": "12/11/2016", "endDate": "12/12/2016", "ctyhocn": "ALBESES", "groupCode": "BSW" }
+booking:
+  startDate: 12/11/2016
+  endDate: 12/12/2016
+  ctyhocn: ALBESES
+  groupCode: BSW
+published: true
 ---
 Welcome to the Brady-Swoboda Wedding reservation site!
 
@@ -19,7 +24,7 @@ See you at the Embassy Suites by Hilton Saratoga Springs in December! We hope yo
 
  * Item one
  * Item two
- * Item three three
+ * Item three
  * Item four
  
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam est nisl, consequat ac aliquet sed, sagittis et tellus. Duis tincidunt volutpat aliquam. Curabitur nec pretium orci, id rhoncus turpis. Morbi mattis tellus non mollis ultrices. In orci est, auctor at enim at, dignissim posuere felis. Vestibulum aliquet augue nibh. Vestibulum auctor aliquam urna sit amet luctus. Curabitur vel sapien ipsum. Maecenas eros urna, convallis et varius cursus, dictum ut tellus. Pellentesque at arcu in justo faucibus mattis fermentum eleifend nibh.
