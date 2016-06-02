@@ -8,14 +8,17 @@
 # Site settings
 incremental: false
 
-url: http://klishgroup.github.io/prose-pogs
 
 title: Prose.io Hilton Pogs
 email: info@klishgroup.com
 description: > # this means to ignore newlines until "baseurl:"
   Hilton Pogs written using Prose.io and GitHub Pages.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.klishgroup.com" # the base hostname & protocol for your site
+
+baseurl: "/prose-pogs" # the subpath of your site, e.g. /blog
+
+# url: "http://www.klishgroup.com" # the base hostname & protocol for your site
+url: http://klishgroup.github.io/prose-pogs
+
 twitter_username: jekyllrb
 github_username:  kgnd
 
