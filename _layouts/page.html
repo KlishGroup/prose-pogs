@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" >
+	<head>
+	    <meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	    <meta name="description" content="{% if (page.summary) %}{{page.summary | xml_escape }}{% endif %}" />
+	    <meta name="author" content="{% if (page.author)%}{{page.author | xml_escape }} {% endif %}" />
+	    <!-- meta name="keywords" content="{% if (page.tags) %}{{page.tags | xml_escape }}{% endif %}" -->
+	    <meta name="generator" content="jekyll" />
+	    
+	    <title>{% if (page.title) %}{{page.title | xml_escape }}{% else %}Hilton POGs{% endif %}</title>
+	    
+	    <link rel="shortcut icon" href="/favicon.ico" />
+	    
+	    <!-- Le styles -->
+	    <link rel="stylesheet" href="/css/bootstrap.min.css" >
+	    <link rel="stylesheet" href="/css/font-awesome.min.css" >
+	    
+	    <link rel="stylesheet" href="/css/page.css" >
+ 	</head>
+ 	<body>
+		{% include page-header.html %}
+ 	
+ 		<div class="container" >
+ 			<div class="container">
+ 				{% if page and page.banner %}
+	 				<img class="center-block" src="/{{page.banner}}" alt="{% if (page.title) %}{{page.title | xml_escape }}{% else %}Hilton POGs{% endif %}" />
+	 				<br /><hr />
+	 			{% endif %}
+ 			</div>
+ 			
+ 			<div class="container editable" >
+ 				{{content}}
+ 			</div>
+ 			
+ 			<br />
+ 			
+ 			<div class="text-center" >
+				<a type="button" class="btn btn-lg btn-primary" href="javascript:document.forms['bookRoom'].submit();" >Book a Room</a>
+				<form name="bookRoom" action="https://secure3.hilton.com/en_US/es/reservation/book.htm?execution=e1s1" >
+					<input type="hidden" id="start" value="{{page.booking.startDate}}" name="/atg/userprofiling/Profile.groupIn" />
+					<input type="hidden" id="end" value="{{page.booking.endDate}}" name="/atg/userprofiling/Profile.groupOut" />
+					<input type="hidden" name="hotel" value="{{page.booking.ctyhocn}}" />
+					<input type="hidden" name="groupCode" value="{{page.booking.groupCode}}" />
+					<input type="hidden" value="BSW" name="/atg/userprofiling/Profile.groupCode" />
+					<input type="hidden" name="_D:hotel" value=" " />
+					<input type="hidden" name="_D:/atg/userprofiling/Profile.groupIn" value=" " />
+					<input type="hidden" name="_D:/atg/userprofiling/Profile.groupOut" value=" " />
+					<input type="hidden" name="_D:/atg/userprofiling/Profile.groupCode" value=" " />
+					<input type="hidden" name="WT.mc_id" value="POG" />
+					<input type="hidden" name="_DARGS" value="/en/groups/inc_personalized_groups_wed_reservation.jhtml.19" />
+				</form>
+ 			</div>
+ 		</div>
+ 		
+ 		<footer class="footer" >
+ 			{% include page-footer.html %}
+ 		</footer>
+ 		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+		<script src="/js/jquery.jeditable.mini.js"></script>
+		
+		<!--
+		<script type="text/javascript" charset="utf-8">
+		$(document).ready(function() {
+			$('.editable').editable('/save', {
+				type: 'textarea',
+				select : true,
+				submit : 'OK',
+				cancel : 'Cancel',
+				cssclass : "editable",
+				loadurl: '/load',
+				loaddata: { location: window.location.pathname },
+				submitdata: { location: window.location.pathname },
+				callback: function(value, settings) {
+					window.location.reload(true);
+				}
+			});
+		});
+		</script>
+		 -->
+	</body>
+</html>

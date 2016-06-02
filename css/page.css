@@ -1,0 +1,201 @@
+body {
+	padding-top: 0px;
+}
+
+img {
+	margin: 0 auto;
+}
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 40px;
+  border-top: 1px solid #eee;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+div div input {
+	display: inline;
+}
+
+header {
+	background: #395c7a;
+}
+header div.container {
+	background: #33536f !important;
+	padding: 0;
+}
+header div nav ul {
+	list-style: none;
+	display: inline-block;
+}
+header div nav ul li {
+	border-right: 1px solid #395c7a;
+	background: #33536f;
+}
+header div nav ul li:hover,
+header div nav ul li:focus {
+	background: #13233f;
+}
+header div nav ul li a {
+	color: #eee;
+}
+header div nav ul li a:hover,
+header div nav ul li a:focus {
+	background: #13233f !important;
+	color: #cecece;
+}
+
+
+#footer_logos {
+	margin: 0 10px 0 0;
+	padding: 0;
+	list-style: none;
+	width: 970px;
+	
+	float: none;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	vertical-align: top;
+}
+#footer_logos li {
+	margin: 0;
+	padding: 0;
+	float: left;
+	position: relative;
+}
+#footer_logos li .footer_logo {
+    background: transparent url('/images/logo_brandbar.png') no-repeat 0 0;
+    display: block;
+    height: 49px;
+}
+
+#footer_logos #brand_bar_WA .footer_logo {
+	background-position: -62px -209px;
+	width: 56px;
+}
+#footer_logos #brand_bar_WA .footer_logo:hover {
+	background-position: -62px -24px;
+}
+
+#footer_logos #brand_bar_CH .footer_logo {
+	background-position: -118px -209px;
+	width: 76px;
+}
+#footer_logos #brand_bar_CH .footer_logo:hover {
+	background-position: -118px -24px;
+}
+#footer_logos #brand_bar_PY .footer_logo {
+	background-position: -194px -209px;
+	width: 80px;
+}
+#footer_logos #brand_bar_PY .footer_logo:hover {
+	background-position: -194px -24px;
+}
+#footer_logos #brand_bar_QQ .footer_logo {
+	background-position: -274px -209px;
+	width: 74px;
+}
+#footer_logos #brand_bar_QQ .footer_logo:hover {
+	background-position: -274px -24px;
+}
+#footer_logos #brand_bar_HI .footer_logo {
+	background-position: 0px -209px;
+	width: 62px;
+}
+#footer_logos #brand_bar_HI .footer_logo:hover {
+	background-position: -0px -24px;
+}
+#footer_logos #brand_bar_DT .footer_logo {
+	background-position: -348px -209px;
+	width: 70px;
+}
+#footer_logos #brand_bar_DT .footer_logo:hover {
+	background-position: -348px -24px;
+}
+#footer_logos #brand_bar_ES .footer_logo {
+	background-position: -418px -209px;
+	width: 66px;
+}
+#footer_logos #brand_bar_ES .footer_logo:hover {
+	background-position: -418px -24px;
+}
+#footer_logos #brand_bar_GI .footer_logo {
+	background-position: -484px -209px;
+	width: 78px;
+}
+#footer_logos #brand_bar_GI .footer_logo:hover {
+	background-position: -484px -24px;
+}
+#footer_logos #brand_bar_HP .footer_logo {
+	background-position: -562px -209px;
+	width: 66px;
+}
+#footer_logos #brand_bar_HP .footer_logo:hover {
+	background-position: -562px -24px;
+}
+#footer_logos #brand_bar_RU .footer_logo {
+	background-position: -628px -209px;
+	width: 54px;
+}
+#footer_logos #brand_bar_RU .footer_logo:hover {
+	background-position: -628px -24px;
+}
+#footer_logos #brand_bar_HW .footer_logo {
+	background-position: -682px -209px;
+	width: 72px;
+}
+#footer_logos #brand_bar_HW .footer_logo:hover {
+	background-position: -682px -24px;
+}
+#footer_logos #brand_bar_HT .footer_logo {
+	background-position: -754px -209px;
+	width: 68px; /* 21749 */
+}
+#footer_logos #brand_bar_HT .footer_logo:hover {
+	background-position: -754px -24px;
+}
+#footer_logos #brand_bar_HV .footer_logo {
+	background-position: -822px -209px;
+	width: 82px;
+}
+#footer_logos #brand_bar_HV .footer_logo:hover {
+	background-position: -822px -24px;
+}
+
+#footer_logos a.footer_logo:hover .brand_tooltip,
+#footer_logos a.footer_logo:focus .brand_tooltip { left: -55px; }
+#footer_logos #brand_bar_HI a.footer_logo:hover .brand_tooltip,
+#footer_logos #brand_bar_HI a.footer_logo:focus .brand_tooltip {left: -13px;}
+#footer_logos #brand_bar_HI .brand_tooltip .arrow_bottom { left: 33px;}
+#footer_logos #brand_bar_WA a.footer_logo:hover .brand_tooltip,
+#footer_logos #brand_bar_WA a.footer_logo:focus .brand_tooltip {left: -62px;}
+#footer_logos #brand_bar_CH a.footer_logo:hover .brand_tooltip,
+#footer_logos #brand_bar_CH a.footer_logo:focus .brand_tooltip {left: -56px;}
+#footer_logos #brand_bar_PY a.footer_logo:hover .brand_tooltip,
+#footer_logos #brand_bar_PY a.footer_logo:focus .brand_tooltip {left: -54px;}
+#footer_logos #brand_bar_QQ a.footer_logo:hover .brand_tooltip,
+#footer_logos #brand_bar_QQ a.footer_logo:focus .brand_tooltip {left: -49px;}
+#footer_logos #brand_bar_DT a.footer_logo:hover .brand_tooltip,
+#footer_logos #brand_bar_DT a.footer_logo:focus .brand_tooltip {left: -58px;}
+#footer_logos #brand_bar_ES a.footer_logo:hover .brand_tooltip,
+#footer_logos #brand_bar_ES a.footer_logo:focus .brand_tooltip {left: -59px;}
+#footer_logos #brand_bar_GI a.footer_logo:hover .brand_tooltip,
+#footer_logos #brand_bar_GI a.footer_logo:focus .brand_tooltip {left: -57px;}
+#footer_logos #brand_bar_HP a.footer_logo:hover .brand_tooltip,
+#footer_logos #brand_bar_HP a.footer_logo:focus .brand_tooltip {left: -57px;}
+#footer_logos #brand_bar_HW a.footer_logo:hover .brand_tooltip,
+#footer_logos #brand_bar_HW a.footer_logo:focus .brand_tooltip {left: -57px;}
+#footer_logos #brand_bar_HT a.footer_logo:hover .brand_tooltip,
+#footer_logos #brand_bar_HT a.footer_logo:focus .brand_tooltip {left: -57px;}
+#footer_logos #brand_bar_HV a.footer_logo:hover .brand_tooltip,
+#footer_logos #brand_bar_HV a.footer_logo:focus .brand_tooltip {left: -50px;}
