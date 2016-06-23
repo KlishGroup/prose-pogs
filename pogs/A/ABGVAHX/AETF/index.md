@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Aeon Entertainment Trade Fair
-date: 2016-05-24
+date: {}
 author: Angela Burnett
-tags: weekly links, java
+tags: 'weekly links, java'
 status: published
 summary: Maecenas aliquet dictum erat ut laoreet. Vestibulum.
 banner: images/banner/leisure-05.jpg
